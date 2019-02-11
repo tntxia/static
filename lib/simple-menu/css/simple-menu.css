@@ -1,0 +1,35 @@
+.simple-menu {
+    margin: 0;
+    padding: 0;
+    background: #6293BB;
+    box-shadow: 0 3px 3px #ccc;
+    display: inline-block;
+}
+
+.simple-menu li {
+    float: left;
+    list-style-type: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.simple-menu li.active {
+    background: #3671a5;
+}
+
+.simple-menu li:hover {
+    background: #3671a5;
+}
+
+.simple-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.simple-menu li:hover a {
+    text-decoration: underline;
+    color: white;
+}

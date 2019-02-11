@@ -1,0 +1,19 @@
+.bootstrap-grid-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
+}
+
+.bootstrap-grid-container .table-container{
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.bootstrap-grid-container .loadingSpan{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 3px solid #333;
+    display: none;
+}

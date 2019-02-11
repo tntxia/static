@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>测试树</title>
+    <link rel='stylesheet' type='text/css' href='../lib/ztree/css/zTreeStyle/zTreeStyle.css'></link>
+    <link rel='stylesheet' type='text/css' href='../lib/easy-tree/css/easy-tree.css'></link>
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/ztree/js/jquery.ztree.all.js"></script>
+    <script src="../lib/easy-tree/js/easy-ztree.js"></script>
+    <script>
+        $(function(){
+            let tree = new EasyZTree({
+                url:'json/tree.json',
+                target:$("#ztree"),
+                contextmenu:{
+                    items:[{
+                        text:'test',
+                        click:function(treeNode){
+                            console.log("click test...",treeNode);
+                        }
+                    },{
+                        text:'test2',
+                        click:function(treeNode){
+                            console.log("click test222...",treeNode);
+                        }
+                    }]
+                }
+            });
+        })
+        
+    </script>
+</head>
+
+<body>
+    <div id="ztree" class="ztree"></div>
+</body>
+
+</html>

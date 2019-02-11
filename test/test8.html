@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='../lib/simple-menu/css/simple-menu.css'></link>
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/simple-menu/js/simple-menu.js"></script>
+    <script>
+        $(function() {
+            let target = $("#menu");
+            let menu = new SimpleMenu({
+                target: target,
+                url: 'json/menu.json'
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="menu"></div>
+</body>
+
+</html>

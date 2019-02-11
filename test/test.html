@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>测试</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../lib/font-awesome-plus/style.css'></link>
+    <link rel='stylesheet' type='text/css' href='../lib/font-awesome/css/font-awesome.css'></link>
+    <style>
+        .after {
+            width: 200px;
+            height: 500px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            /* background: url(1.jpg) repeat center center;
+            opacity: .4 */
+        }
+        
+        .after:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: url(1.jpg) repeat center center;
+            opacity: .4
+        }
+    </style>
+</head>
+
+<body>
+    <span class="fa fa-ellipsis-h choose-btn"></span>
+    <div class="after">hello</div>
+</body>
+
+</html>

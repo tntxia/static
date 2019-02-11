@@ -1,0 +1,16 @@
+{
+	"title":"虾米UI-表格",
+	"target":"index.html",
+	"stylesheet":[{
+		"href":"../lib/bootstrap/css/bootstrap.css"
+	},{
+		"href":"../lib/bootstrap-plus/css/bootstrap.grid.css"
+	}],
+	"script":[{
+		"src":"../lib/jquery/jquery.js"
+	},{
+		"src":"../lib/bootstrap-plus/js/bootstrap.grid.js"
+	},{
+		"src":"js/test.js"
+	}]
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='../lib/jxiaui/css/jxiaui.css'></link>
+    <link rel='stylesheet' type='text/css' href='../lib/bootstrap/css/bootstrap.css'></link>
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/fileChoose/fileChoose.js"></script>
+    <script>
+        $(function() {
+            let fileChoose = new FileChoose({
+                id: "fileChoose",
+                onChange: function(path) {
+                    
+                }
+            });
+            debugger
+            fileChoose.show();
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="fileChoose"></div>
+</body>
+
+</html>

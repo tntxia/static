@@ -1,0 +1,19 @@
+{
+	"title":"OA信息管理",
+	"css":[
+		"lib/bootstrap/css/bootstrap.css",
+		"css/tntxiaui/style.css",
+		"css/style.css"
+	],
+	"scripts":[{
+		"content":"var webRoot='/${basePath}'"
+	},
+		"js/jquery.js","js/jquery.form.js","js/menu.js",
+		"lib/vue.js","lib/vue-manager.js",
+		"lib/bootstrap/js/bootstrap.js","js/ckeditor.js","js/bundle.js"],
+	"modules":[
+		"department","config","stamp","header","contact_template","currency","user","systemInfo"
+	],
+	"body":"body.html",
+	"target":"index.html"
+}

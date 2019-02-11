@@ -1,0 +1,8 @@
+[{
+    "name": "菜单1",
+    "url": "#menu",
+    "active": true
+}, {
+    "name": "菜单2",
+    "url": "#menu2"
+}]

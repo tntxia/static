@@ -1,0 +1,20 @@
+.loading-div-top {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.loading-div-top .message {
+    background: #007ACC;
+    padding: 3px 20px;
+    color: white;
+}
+
+.jxiaui-detail-form th.bg-empha {
+    background: #E8F1FE;
+}
+
+.jxiaui-detail-form>.toolbar {
+    text-align: center;
+}

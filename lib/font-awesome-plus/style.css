@@ -1,0 +1,17 @@
+.choose-btn {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: 1px solid #666;
+    padding: 0px 6px;
+    border-radius: 50%;
+    color: #666;
+    cursor: pointer;
+}
+
+.choose-btn:before {
+    content: "\f141";
+}

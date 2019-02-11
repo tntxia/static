@@ -1,0 +1,99 @@
+#tntxia-ui-popup-dialog {
+    border: 1px solid #0000FF;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: white;
+}
+
+#tntxia-ui-popup-dialog table {
+    width: 100%;
+}
+
+#tntxia-ui-popup-dialog-bar {
+    background: blue;
+    width: 100%;
+    height: 25px;
+}
+
+#tntxia-ui-popup-dialog-year-month {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+}
+
+#tntxia-ui-popup-dialog-dayline {
+    width: 100%;
+    height: 18px;
+}
+
+#tntxia-ui-popup-dialog-date-line-div {
+    width: 100%;
+    height: 100%;
+}
+
+.tntxia-ui-popup-dialog-dateline {
+    width: 100%;
+    height: 18px;
+}
+
+.tntxia-ui-popup-dialog-item {
+    height: 18px;
+    width: 24px;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    background: #8EBE0C;
+    border: 1px solid;
+    color: white;
+}
+
+.tntxia-ui-popup-dialog-todayitem {
+    height: 18px;
+    width: 24px;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    background: #FF8040;
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.tntxia-ui-popup-dialog-filldateitem {
+    height: 18px;
+    width: 24px;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    background: green;
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.tntxia-ui-popup-dialog-commonitem {
+    height: 18px;
+    width: 24px;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid;
+    color: #330066;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.tntxia-ui-popup-dialog-emptyitem {
+    height: 18px;
+    width: 24px;
+    float: left;
+    border: 1px solid;
+}
+
+.tntxia-ui-popup-dialog-clickitem {
+    background: cyan;
+}

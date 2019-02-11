@@ -1,0 +1,20 @@
+.easy-ztree-menu{
+    position: absolute;
+}
+
+.easy-ztree-menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.easy-ztree-menu li{
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    list-style: none;
+    background: white;
+}
+
+.easy-ztree-menu li:hover{
+    background:#ccc;
+}

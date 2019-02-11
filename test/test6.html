@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='../lib/jxiaui/css/jxiaui.css'></link>
+    <link rel='stylesheet' type='text/css' href='../lib/bootstrap/css/bootstrap.css'></link>
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/jxiaui/js/jxiaui.js"></script>
+    <script>
+        let A = function(a) {
+
+            this.a = a;
+        }
+
+        let B = function(a, b) {
+
+            A.call(this, a);
+            this.b = b;
+        }
+
+        let C = function() {
+
+        }
+
+        B.prototype = Object.create(A.prototype);
+
+        // B.prototype.constructor = B
+
+        let b = new B(1, 2);
+
+        console.log(b instanceof A);
+        console.log(b instanceof B);
+
+        console.log(b instanceof C);
+
+        console.log(b.a);
+        console.log(b.b);
+
+        console.log(b);
+
+        let b1 = new B(3, 4);
+
+        console.log(b1 instanceof A);
+        console.log(b1 instanceof B);
+
+        console.log(b1 instanceof C);
+
+        console.log(b1.a);
+        console.log(b1.b);
+
+        console.log(b1);
+    </script>
+</head>
+
+<body>
+    <div ui="rich-editor"></div>
+</body>
+
+</html>

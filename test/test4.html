@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="../lib/jquery/jquery.js"></script>
+    <script>
+        $(function() {
+            $("#editBtn").click(function() {
+
+                document.getElementById("testEdit").focus();
+
+                var colorSpan = $("<span>", {
+                    html: "&nbsp;"
+                });
+                colorSpan.css("color", "red");
+                $("#testEdit").append(colorSpan);
+
+                var range = document.createRange();
+                range.selectNodeContents(colorSpan.get(0));
+                range.collapse(false);
+                var sel = window.getSelection();
+                sel.removeAllRanges();
+                sel.addRange(range);
+                colorSpan.focus();
+
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="editBtn">编辑</button>
+    <div id="testEdit" contenteditable="true">3333333ttt</div>
+</body>
+
+</html>

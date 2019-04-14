@@ -1,0 +1,22 @@
+.jxia-tabs-head {
+    padding-top: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.jxia-tabs-head-item {
+    display: inline-block;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-right: 20px;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.jxia-tabs-head-item.active {
+    color: blue;
+    border-color: blue;
+    top: 1px;
+    background: white;
+}

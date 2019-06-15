@@ -1,0 +1,15 @@
+.jxiaui-dialog-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.jxiaui-dialog-box {
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000000;
+}

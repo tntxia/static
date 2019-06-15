@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Tabs Vue组件</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../css/jxiaui.tabs.css'></link>
+    <script src="../../../vue/vue.js"></script>
+    <script src="../dist/jxiaui.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <jxiaui-tabs>
+            <jxiaui-tabs-item label="Tab 1">
+                <jxiaui-datagrid :dataset="dataset">
+                    <jxiaui-datagrid-item label="销售编号" field="number">
+                        <template v-slot:default="row">
+                            {{row.number}}
+                        </template>
+                    </jxiaui-datagrid-item>
+                    <jxiaui-datagrid-item label="销售人员" field="man"></jxiaui-datagrid-item>
+                    <jxiaui-datagrid-item label="操作">
+                        <template v-slot:default="row">
+                            <button @click="showRow(row)">点我</button>
+                        </template>
+                    </jxiaui-datagrid-item>
+                </jxiaui-datagrid>
+            </jxiaui-tabs-item>
+            <jxiaui-tabs-item label="Tab 2">
+                Tab 2 内容
+            </jxiaui-tabs-item>
+        </jxiaui-tabs>
+    </div>
+    <script>
+        let ui = new Vue({
+            el: "#container",
+            data() {
+                return {
+                    dataset: {
+                        rows: [{
+                            "number": "ONK1234",
+                            "man": "张小宝"
+                        }]
+                    }
+                }
+            },
+            methods: {
+                showRow(row) {
+                    debugger
+                    console.log(row);
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+    "dist": {
+        "file": "dist/jxiaui.js"
+    },
+    "components": [{
+        "name": "jxiaui-tabs",
+        "template": "src/tabs.html",
+        "options": "src/tabs.js"
+    }, {
+        "name": "jxiaui-tabs-item",
+        "template": "src/tabs-item.html",
+        "options": "src/tabs-item.js"
+    }, {
+        "name": "jxiaui-datagrid",
+        "options": "src/datagrid.js"
+    }, {
+        "name": "jxiaui-datagrid-item",
+        "template": "src/datagrid-item.html",
+        "options": "src/datagrid-item.js"
+    }]
+}

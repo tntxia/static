@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>弹出窗口</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../css/jxiaui.dialog.css'></link>
+    <link rel='stylesheet' type='text/css' href='/static/lib/font-awesome/css/font-awesome.css'></link>
+    <script src="../../../vue/vue.js"></script>
+    <script src="../dist/jxiaui.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <button @click="showDialog">点击</button>
+        <div class="jxiaui-dialog-wrapper" v-if="showDialogFlag">
+            <div class="jxiaui-dialog-box" style="width: 500px;">
+                <div style="position: relative;">
+                    <span>标题</span>
+                    <span class="fa fa-close" style="position: absolute;right: 10px;"></span>
+                </div>
+                <div>
+                    Hello
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#container',
+            data() {
+                return {
+                    showDialogFlag: false
+                }
+            },
+            methods: {
+                showDialog() {
+                    this.showDialogFlag = true;
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

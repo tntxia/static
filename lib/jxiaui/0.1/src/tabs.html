@@ -1,0 +1,10 @@
+<div class="jxia-tabs">
+    <div class="jxia-tabs-head">
+        <div class="jxia-tabs-head-item" @click="chooseTab(item)" v-for="(item,index) in items" :key="index" :class="{active: item.active }">
+            {{item.label}}
+        </div>
+    </div>
+    <div>
+        <slot></slot>
+    </div>
+</div>

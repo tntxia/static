@@ -1,0 +1,17 @@
+.jxiaui-datagrid table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.jxiaui-datagrid table th {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.jxiaui-datagrid table td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 5px;
+}

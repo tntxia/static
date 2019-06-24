@@ -1,0 +1,46 @@
+.jxia-ui-datepicker {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.datepicker-calendar {
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: white;
+}
+
+.datepicker-calendar th {
+    font-size: 14px;
+    padding: 2px;
+}
+
+.datepicker-calendar td {
+    font-size: 14px;
+    padding: 2px;
+}
+
+.datepicker-calendar thead th {
+    background: #d3d3d3;
+}
+
+.datepicker-calendar td {
+    text-align: center;
+    color: #ccc;
+}
+
+.datepicker-calendar td.is-this-month {
+    color: #000;
+}
+
+.datepicker-calendar .operate-btn {
+    cursor: pointer;
+}
+
+.datepicker-calendar .date-block {
+    cursor: pointer;
+}
+
+.datepicker-calendar .is-today {
+    border: 1px solid #ccc;
+}

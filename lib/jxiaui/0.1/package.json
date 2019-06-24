@@ -17,5 +17,9 @@
         "name": "jxiaui-datagrid-item",
         "template": "src/datagrid-item.html",
         "options": "src/datagrid-item.js"
+    }, {
+        "name": "jxiaui-datepicker",
+        "template": "src/datepicker.html",
+        "options": "src/datepicker.js"
     }]
 }

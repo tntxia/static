@@ -21,5 +21,9 @@
         "name": "jxiaui-datepicker",
         "template": "src/datepicker.html",
         "options": "src/datepicker.js"
+    }, {
+        "name": "jxiaui-dialog",
+        "template": "src/dialog.html",
+        "options": "src/dialog.js"
     }]
 }

@@ -13,30 +13,24 @@
 <body>
     <div id="container">
         <button @click="showDialog">点击</button>
-        <div class="jxiaui-dialog-wrapper" v-if="showDialogFlag">
-            <div class="jxiaui-dialog-box" style="width: 500px;">
-                <div style="position: relative;">
-                    <span>标题</span>
-                    <span class="fa fa-close" style="position: absolute;right: 10px;"></span>
-                </div>
-                <div>
-                    Hello
-                </div>
-
-            </div>
-        </div>
+        <jxiaui-dialog title="测试窗口" v-if="showFlag" @close="close">
+            hello world
+        </jxiaui-dialog>
     </div>
     <script>
         new Vue({
             el: '#container',
             data() {
                 return {
-                    showDialogFlag: false
+                    showFlag: false
                 }
             },
             methods: {
                 showDialog() {
-                    this.showDialogFlag = true;
+                    this.showFlag = true;
+                },
+                close() {
+                    this.showFlag = false;
                 }
             },
         })

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Tabs Vue组件</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../../../font-awesome/css/font-awesome.css'></link>
+    <link rel='stylesheet' type='text/css' href='../css/jxiaui.datagrid.css'></link>
+    <script src="../../../jquery/jquery.js"></script>
+    <script src="../../../vue/vue.js"></script>
+    <script src="../../../vue/vue-resource.js"></script>
+    <script src="../dist/jxiaui.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <input v-model="form.name"> <button @click="query">查询</button>
+        </div>
+        <jxiaui-datagrid :dataset="dataset" ref="datagrid">
+            <jxiaui-datagrid-item field="name" label="名称"></jxiaui-datagrid-item>
+        </jxiaui-datagrid>
+    </div>
+    <script>
+        let ui = new Vue({
+            el: "#container",
+            data() {
+                return {
+                    form: {
+                        name: null
+                    },
+                    dataset: {
+                        url: 'json/test.json',
+                        pageSize: 30
+                    }
+                }
+            },
+            methods: {
+                query(row) {
+                    let datagrid = this.$refs["datagrid"];
+                    datagrid.setParams(this.form);
+                    datagrid.loadData();
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>

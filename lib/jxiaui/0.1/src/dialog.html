@@ -1,0 +1,13 @@
+<div class="jxiaui-dialog-wrapper">
+    <div class="jxiaui-dialog-box" style="width: 500px;" :style="{'max-height': maxHeight + 'px'}">
+        <div class="jxiaui-dialog-title" style="position: relative;">
+            &nbsp;
+            <span>{{title}}</span>
+            <span class="fa fa-close" style="position: absolute;right: 10px;cursor: pointer;" @click="close"></span>
+        </div>
+        <div>
+            <slot>
+            </slot>
+        </div>
+    </div>
+</div>

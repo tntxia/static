@@ -25,5 +25,13 @@
         "name": "jxiaui-dialog",
         "template": "src/dialog.html",
         "options": "src/dialog.js"
+    }, {
+        "name": "jxiaui-ip-input",
+        "template": "src/ip-input.html",
+        "options": "src/ip-input.js"
+    }, {
+        "name": "jxiaui-checkbox",
+        "template": "src/checkbox.html",
+        "options": "src/checkbox.js"
     }]
 }

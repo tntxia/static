@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Tabs Vue组件</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../../../font-awesome/css/font-awesome.css'></link>
+    <link rel='stylesheet' type='text/css' href='../css/jxiaui.ip-input.css'></link>
+    <script src="../../../vue/vue.js"></script>
+    <script src="../dist/jxiaui.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <jxiaui-ip-input v-model="ip"></jxiaui-ip-input> <button @click="showIP">显示IP</button>
+        </div>
+        <div>{{ip}}</div>
+    </div>
+    <script>
+        let ui = new Vue({
+            el: "#container",
+            data() {
+                return {
+                    ip: null
+                }
+            },
+            methods: {
+                showIP(row) {
+                    console.log("the ip is ", this.ip);
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>

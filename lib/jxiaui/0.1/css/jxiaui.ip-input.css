@@ -1,0 +1,8 @@
+.jxiaui-ip-input {
+    display: inline-block;
+}
+
+.jxiaui-ip-input input {
+    width: 40px;
+    margin-right: 15px;
+}

@@ -1,0 +1,21 @@
+.jxiaui-combobox {
+    display: inline-block;
+    position: relative;
+}
+
+.jxiaui-combobox .combobox-dropdown-list {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.jxiaui-combobox .combobox-dropdown-list>div {
+    cursor: pointer;
+}
+
+.jxiaui-combobox .combobox-dropdown-list>div:hover {
+    background: #5FC1F9
+}

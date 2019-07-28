@@ -4,7 +4,6 @@
     },
     "components": [{
         "name": "jxiaui-tabs",
-        "template": "src/tabs.html",
         "options": "src/tabs.js"
     }, {
         "name": "jxiaui-tabs-item",

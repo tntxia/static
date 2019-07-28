@@ -1,9 +1,9 @@
-.jxia-tabs-head {
+.jxiaui-tabs-head {
     padding-top: 5px;
     border-bottom: 1px solid #ccc;
 }
 
-.jxia-tabs-head-item {
+.jxiaui-tabs-head-item {
     display: inline-block;
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
@@ -14,7 +14,7 @@
     position: relative;
 }
 
-.jxia-tabs-head-item.active {
+.jxiaui-tabs-head-item.active {
     color: blue;
     border-color: blue;
     top: 1px;

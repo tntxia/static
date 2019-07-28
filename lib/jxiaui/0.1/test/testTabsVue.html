@@ -11,7 +11,8 @@
 
 <body>
     <div id="container">
-        <jxiaui-tabs>
+        <div><button @click="addTab">增加</button></div>
+        <jxiaui-tabs ref="tabs">
             <jxiaui-tabs-item label="Tab 1">
                 <jxiaui-datagrid :dataset="dataset">
                     <jxiaui-datagrid-item label="销售编号" field="number">
@@ -33,8 +34,16 @@
         </jxiaui-tabs>
     </div>
     <script>
+
+        let component1 = Vue.extend({
+            template: 
+        })
+
         let ui = new Vue({
             el: "#container",
+            components: {
+
+            },
             data() {
                 return {
                     dataset: {
@@ -46,9 +55,14 @@
                 }
             },
             methods: {
-                showRow(row) {
-                    debugger
-                    console.log(row);
+                addTab() {
+                    let content = this.$createElement("jxiaui-checkbox", {
+
+                    }, []);
+                    this.$refs["tabs"].addTab({
+                        label: '新建Tab',
+                        content: content
+                    })
                 }
             },
         });

@@ -1,6 +1,6 @@
 <div class="jxiaui-combobox">
     <input ref="inputBox" v-model="searchText" @change="handleChange" @keyup.stop="handleKeyup" @click="handleClick">
     <div class="combobox-dropdown-list" v-if="showFlag">
-        <div v-for="item in list" @click.stop="choose(item)">{{item.name}}</div>
+        <div v-for="item in list" @click.stop="choose(item)">{{item[label]}}</div>
     </div>
 </div>

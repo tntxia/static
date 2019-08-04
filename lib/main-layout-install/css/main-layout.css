@@ -23,9 +23,9 @@ body {
 
 .main-layout .leftbar {
     float: left;
-    width: 110px;
     overflow: auto;
     border-right: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 .main-layout .leftbar .leftbar-item .leftbar-header {
@@ -43,7 +43,6 @@ body {
 
 .main-layout .main_sec {
     float: left;
-    width: calc(100% - 111px);
     overflow: auto;
     background: white;
 }

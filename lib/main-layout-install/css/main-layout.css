@@ -22,7 +22,10 @@ body {
 }
 
 .main-layout .leftbar {
-    float: left;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    bottom: 0;
     overflow: auto;
     border-right: 1px solid #ccc;
     box-sizing: border-box;
@@ -42,7 +45,10 @@ body {
 }
 
 .main-layout .main_sec {
-    float: left;
+    position: fixed;
+    left: 110px;
+    top: 80px;
+    bottom: 0;
     overflow: auto;
     background: white;
 }

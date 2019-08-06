@@ -16,9 +16,16 @@
     <div id="container">
         <div>
             <input v-model="form.name"> <button @click="query">查询</button>
+            <button @click="add">增加一行</button>
+            <button @click="showNewRows">显示新建的行</button>
         </div>
         <jxiaui-datagrid :dataset="dataset" ref="datagrid">
-            <jxiaui-datagrid-item field="name" label="名称"></jxiaui-datagrid-item>
+            <jxiaui-datagrid-item field="name" label="名称">
+                <template v-slot="row">
+                    <div v-if="row.isNew"><input v-model="row.name"></div>
+                    <div v-if="!row.isNew">{{row.name}}</div>
+                </template>
+            </jxiaui-datagrid-item>
         </jxiaui-datagrid>
     </div>
     <script>
@@ -40,6 +47,16 @@
                     let datagrid = this.$refs["datagrid"];
                     datagrid.setParams(this.form);
                     datagrid.loadData();
+                },
+                add() {
+                    let datagrid = this.$refs["datagrid"];
+                    datagrid.insertRow({
+                        name: '肖奈'
+                    });
+                },
+                showNewRows() {
+                    let datagrid = this.$refs["datagrid"];
+                    console.log("new rows,,,", datagrid.getNewRows());
                 }
             },
         });

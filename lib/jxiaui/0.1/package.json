@@ -10,6 +10,10 @@
         "template": "src/tabs-item.html",
         "options": "src/tabs-item.js"
     }, {
+        "name": "jxiaui-pagination",
+        "template": "src/pagination.html",
+        "options": "src/pagination.js"
+    }, {
         "name": "jxiaui-datagrid",
         "options": "src/datagrid.js"
     }, {

@@ -1,0 +1,10 @@
+.jxiaui-pagination .jxiaui-pagination-paging-button {
+    user-select: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.jxiaui-pagination .jxiaui-pagination-paging-button.selected {
+    background: #ccc;
+}

@@ -40,5 +40,12 @@
         "name": "jxiaui-combobox",
         "template": "src/combobox.html",
         "options": "src/combobox.js"
+    }, {
+        "name": "jxiaui-table-form",
+        "options": "src/table-form.js"
+    }, {
+        "name": "jxiaui-table-form-item",
+        "template": "src/table-form-item.html",
+        "options": "src/table-form-item.js"
     }]
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>TableForm 组件</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../css/jxiaui-table-form.css'></link>
+    <script src="../../../vue/vue.js"></script>
+    <script src="../dist/jxiaui.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <jxiaui-table-form>
+            <jxiaui-table-form-item label="名称">
+                <input v-model="form.name">
+            </jxiaui-table-form-item>
+            <jxiaui-table-form-item label="年纪">
+                <input v-model="form.age">
+            </jxiaui-table-form-item>
+        </jxiaui-table-form>
+        <div>
+            <button @click="sub">确定</button>
+        </div>
+    </div>
+    <script>
+        let ui = new Vue({
+            el: "#container",
+            components: {
+
+            },
+            data() {
+                return {
+                    form: {
+                        name: null,
+                        age: null
+                    }
+                }
+            },
+            methods: {
+                sub() {
+                    console.log("form info,,,,", this.form);
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>

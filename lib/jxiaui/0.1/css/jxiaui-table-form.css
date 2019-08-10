@@ -1,0 +1,15 @@
+.jxiaui-table-form table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.jxiaui-table-form table th {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.jxiaui-table-form table td {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}

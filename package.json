@@ -1,0 +1,31 @@
+{
+    "name": "static",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "directories": {
+        "lib": "lib",
+        "test": "test"
+    },
+    "dependencies": {
+        "vue": "latest",
+        "vue-resource": "latest",
+        "underscore": "latest",
+        "element-ui": "latest"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tntxia/static.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tntxia/static/issues"
+    },
+    "homepage": "https://github.com/tntxia/static#readme"
+}

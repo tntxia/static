@@ -11,12 +11,18 @@
 
 <body>
     <div id="container">
-        <jxiaui-table-form>
+        form name: {{form.name}}
+        <jxiaui-table-form :data="form">
             <jxiaui-table-form-item label="名称">
-                <input v-model="form.name">
+                <template v-slot="form">
+                    {{form.name}}
+                    <input v-model="form.name">
+                </template>
             </jxiaui-table-form-item>
             <jxiaui-table-form-item label="年纪">
-                <input v-model="form.age">
+                <template v-slot="form">
+                    <input v-model="form.age">
+                </template>
             </jxiaui-table-form-item>
         </jxiaui-table-form>
         <div>
@@ -36,6 +42,11 @@
                         age: null
                     }
                 }
+            },
+            mounted() {
+                setTimeout(() => {
+                    this.form.name = "hello";
+                }, 500);
             },
             methods: {
                 sub() {

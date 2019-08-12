@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Bootstrap扩展-Tabs</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../lib/jxiaui/0.1/css/jxiaui.tabs.css'></link>
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/jxiaui/0.1/js/jxiaui.js"></script>
+    <script src="../lib/jxiaui/0.1/js/tabs.js"></script>
+    <script>
+        $(function() {
+            let ui = new JxiaUI({
+                el: $("#container"),
+                methods: {
+                    loadTab1() {
+                        console.log("loading tab 1....");
+                    },
+                    loadTab2() {
+                        console.log("loading tab 2....");
+                    }
+                },
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <jxia-tabs>
+            <jxia-tab label="Tab 1" template="tab1.html" onload="loadTab1">
+            </jxia-tab>
+            <jxia-tab label="Tab 2" template="tab2.html" onload="loadTab2"></jxia-tab>
+        </jxia-tabs>
+    </div>
+</body>
+
+</html>

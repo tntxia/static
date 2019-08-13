@@ -13,7 +13,8 @@
 <body>
     <div id="container">
         <div>
-            <jxiaui-ip-input v-model="ip"></jxiaui-ip-input> <button @click="showIP">显示IP</button>
+            <jxiaui-checkbox v-model="isIpBind" true-value="Y" false-value="N"></jxiaui-checkbox>
+            <jxiaui-ip-input v-model="ip" :disabled="isIpInputDisable"></jxiaui-ip-input> <button @click="showIP">显示IP</button>
         </div>
         <div>{{ip}}</div>
     </div>
@@ -22,12 +23,18 @@
             el: "#container",
             data() {
                 return {
+                    isIpBind: 'Y',
                     ip: null
                 }
             },
             methods: {
                 showIP(row) {
                     console.log("the ip is ", this.ip);
+                }
+            },
+            computed: {
+                isIpInputDisable() {
+                    return this.isIpBind !== "Y";
                 }
             },
         });

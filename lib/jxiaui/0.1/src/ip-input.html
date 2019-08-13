@@ -1,6 +1,6 @@
 <div class="jxiaui-ip-input">
     <template v-for="(seg, index) in segs">
-        <input v-model="seg.value" maxlength="3" @change="handleChange">
+        <input v-model="seg.value" maxlength="3" @change="handleChange" :disabled="disabled">
         <span v-if="index !== segs.length - 1">.</span>
     </template>
 </div>

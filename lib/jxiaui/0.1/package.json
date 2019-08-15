@@ -37,6 +37,10 @@
         "template": "src/checkbox.html",
         "options": "src/checkbox.js"
     }, {
+        "name": "jxiaui-button",
+        "template": "src/button.html",
+        "options": "src/button.js"
+    }, {
         "name": "jxiaui-combobox",
         "template": "src/combobox.html",
         "options": "src/combobox.js"

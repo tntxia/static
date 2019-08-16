@@ -3,11 +3,14 @@
     <select v-model="paging.pageSize" @change="pageSizeChange">
         <option v-for="p in pageSizeList" :value="p">{{p}}</option>
     </select> 条
-    <span class="fa fa-angle-double-left jxiaui-pagination-paging-button"></span>
-    <span v-if="firstPageShowFlag" class="jxiaui-pagination-first-page  jxiaui-pagination-paging-button" @click="choose(1)">1</span>
-    <span v-if="firstPageShowFlag">...</span>
-    <span v-for="p in pageList" :class="{selected: p === paging.page}" class=" jxiaui-pagination-paging-button" @click="choose(p)">{{p}}</span>
-    <span v-if="lastPageShowFlag">...</span>
-    <span v-if="lastPageShowFlag" class="jxiaui-pagination-first-page  jxiaui-pagination-paging-button" @click="choose(totalPage)">{{totalPage}}</span>
-    <span class="fa fa-angle-double-right jxiaui-pagination-paging-button"></span>
+    <div style="display: inline-block" v-if="total > 0">
+        <span class="fa fa-angle-double-left jxiaui-pagination-paging-button"></span>
+        <span v-if="firstPageShowFlag" class="jxiaui-pagination-first-page  jxiaui-pagination-paging-button" @click="choose(1)">1</span>
+        <span v-if="firstPageShowFlag">...</span>
+        <span v-for="p in pageList" :class="{selected: p === paging.page}" class=" jxiaui-pagination-paging-button" @click="choose(p)">{{p}}</span>
+        <span v-if="lastPageShowFlag">...</span>
+        <span v-if="lastPageShowFlag" class="jxiaui-pagination-first-page  jxiaui-pagination-paging-button" @click="choose(totalPage)">{{totalPage}}</span>
+        <span class="fa fa-angle-double-right jxiaui-pagination-paging-button"></span>
+    </div>
+
 </div>

@@ -1,5 +1,5 @@
 <div class="jxia-ui-datepicker">
-    <input v-model="inputText" readonly="readonly" @click.stop="showCalendar">
+    <input v-model="inputText" readonly="readonly" @click.stop="showCalendar" @keyup.delete="inputText=null">
     <span class="fa fa-calendar" @click.stop="showCalendar"></span>
     <div class="datepicker-calendar" v-if="showFlag" @click.stop="emptyFun">
         <div class="datepicker-head">

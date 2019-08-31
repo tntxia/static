@@ -1,11 +1,16 @@
 <div class="jxia-ui-datepicker">
     <input v-model="inputText" readonly="readonly" @click.stop="showCalendar" @keyup.delete="inputText=null">
     <span class="fa fa-calendar" @click.stop="showCalendar"></span>
-    <div class="datepicker-calendar" v-if="showFlag" @click.stop="emptyFun">
+    <div class="datepicker-calendar" v-if="showFlag" @click.stop="endEditYear">
         <div class="datepicker-head">
             <span class="fa fa-angle-double-left operate-btn" @click.stop="preYear"></span>
             <span class="fa fa-angle-left operate-btn" @click.stop="preMonth"></span>
-            <span>{{year}} 年 {{month + 1}} 月</span>
+            <span v-if="!yearEditing" @click.stop="startEditYear">{{year}} 年</span>
+            <span v-if="yearEditing">
+                <input v-model="year" @click.stop="emptyFun" size="4"> 年
+            </span>
+
+            <span>{{month + 1}} 月</span>
             <span class="fa fa-angle-right operate-btn" @click.stop="nextMonth"></span>
             <span class="fa fa-angle-double-right operate-btn" @click.stop="nextYear"></span>
         </div>

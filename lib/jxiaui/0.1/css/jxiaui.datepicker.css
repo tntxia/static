@@ -1,6 +1,7 @@
 .jxia-ui-datepicker {
     display: inline-block;
     font-size: 14px;
+    user-select: none;
 }
 
 .datepicker-calendar {

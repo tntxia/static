@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Tabs Vue组件</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../lib/jxiaui/0.1/css/jxiaui.tabs.css'></link>
+    <script src="../lib/vue/vue.js"></script>
+    <script src="../lib/vue/vue-resource.js"></script>
+    <script src="../lib/vue-components/comboBox/comboBox.js"></script>
+    <style>
+        .jxia-combobox {
+            width: 250px;
+            border: 1px solid #1CBBF2;
+            box-sizing: content-box;
+            padding: 5px;
+        }
+        
+        .jxia-combobox input {
+            width: calc(100% - 12px);
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <jxia-combobox :dataset="dataset"></jxia-combobox>
+    </div>
+    <script>
+        let ui = new Vue({
+            el: "#container",
+            data() {
+                return {
+                    dataset: [{
+                        value: 'apple',
+                        label: '苹果'
+                    }, {
+                        value: 'pear',
+                        label: '梨'
+                    }]
+                }
+            },
+            methods: {}
+        });
+    </script>
+</body>
+
+</html>

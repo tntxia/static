@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Tabs Vue组件</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../../../font-awesome/css/font-awesome.css'></link>
+    <link rel='stylesheet' type='text/css' href='../css/jxiaui-radio-group.css'></link>
+    <script src="../../../vue/vue.js"></script>
+    <script src="../../../vue/vue-resource.js"></script>
+    <script src="../dist/jxiaui.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <jxiaui-radio-group v-model="selected">
+                <jxiaui-radio-group-item value="5" label="极好"></jxiaui-radio-group-item>
+                <jxiaui-radio-group-item value="4" label="很好"></jxiaui-radio-group-item>
+            </jxiaui-radio-group>
+        </div>
+        <div>{{selected}}</div>
+    </div>
+    <script>
+        let ui = new Vue({
+            el: "#container",
+            data() {
+                return {
+                    selected: null
+                }
+            },
+            methods: {},
+            computed: {},
+        });
+    </script>
+</body>
+
+</html>

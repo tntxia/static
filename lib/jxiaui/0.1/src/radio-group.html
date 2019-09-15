@@ -1,0 +1,8 @@
+<div class="jxiaui-radio-group">
+    <div class="jxiaui-radio-group-item" v-for="(item,index) in items" :key="index">
+        <input type="radio" v-model="v" :value="item.value"> <label>{{item.label}}</label>
+    </div>
+    <slot></slot>
+    <!--
+    5- 极好<input type="radio" name="rfq" value="5"> 4- 好 <input type="radio" name="rfq" value="4"> 3- 一般<input type="radio" name="rfq" value="3"> 2- 差 <input type="radio" name="rfq" value="2"> 1- 极差<input type="radio" name="rfq" value="1"></input>-->
+</div>

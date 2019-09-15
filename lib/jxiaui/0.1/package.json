@@ -51,5 +51,17 @@
         "name": "jxiaui-table-form-item",
         "template": "src/table-form-item.html",
         "options": "src/table-form-item.js"
+    }, {
+        "name": "jxiaui-select",
+        "template": "src/select.html",
+        "options": "src/select.js"
+    }, {
+        "name": "jxiaui-radio-group",
+        "template": "src/radio-group.html",
+        "options": "src/radio-group.js"
+    }, {
+        "name": "jxiaui-radio-group-item",
+        "template": "src/radio-group-item.html",
+        "options": "src/radio-group-item.js"
     }]
 }

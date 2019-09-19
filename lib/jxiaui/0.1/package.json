@@ -63,5 +63,9 @@
         "name": "jxiaui-radio-group-item",
         "template": "src/radio-group-item.html",
         "options": "src/radio-group-item.js"
+    }, {
+        "name": "jxiaui-echart",
+        "template": "src/echart.html",
+        "options": "src/echart.js"
     }]
 }

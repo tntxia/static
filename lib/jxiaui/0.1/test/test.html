@@ -5,49 +5,29 @@
     <title>Tabs Vue组件</title>
     <meta charset='utf-8'>
     <link rel='stylesheet' type='text/css' href='../../../font-awesome/css/font-awesome.css'></link>
-    <link rel='stylesheet' type='text/css' href='../css/jxiaui.ip-input.css'></link>
+    <link rel='stylesheet' type='text/css' href='../css/jxiaui-upload-image.css'></link>
+    <script src="../../../jquery/3.4.1/jquery.js"></script>
     <script src="../../../vue/vue.js"></script>
     <script src="../../../echarts/echarts.js"></script>
     <script src="../dist/jxiaui.js"></script>
 </head>
 
 <body>
-    <div id="container">
-        <div>
-            <jxiaui-echart :option="option"></jxiaui-echart>
-        </div>
-        <div>{{ip}}</div>
+    <div class="jxiaui-upload-image">
+        <img id="pic" src="/static/images/no-pic.png">
+        <input type="file" id="file">
     </div>
     <script>
-        let ui = new Vue({
-            el: "#container",
-            data() {
-                return {
-                    option: {
-                        xAxis: {
-                            type: 'category',
-                            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-                        },
-                        yAxis: {
-                            type: 'value'
-                        },
-                        series: [{
-                            data: [820, 932, 901, 934, 1290, 1330, 1320],
-                            type: 'line'
-                        }]
-                    }
-                }
-            },
-            methods: {
-                showIP(row) {
-                    console.log("the ip is ", this.ip);
-                }
-            },
-            computed: {
-                isIpInputDisable() {
-                    return this.isIpBind !== "Y";
-                }
-            },
+        let fileInput = document.getElementById("file");
+        let pic = document.getElementById("pic");
+        pic.addEventListener("click", function() {
+            file.click();
+        });
+        fileInput.addEventListener("change", function(e) {
+            let file = fileInput.files[0];
+            var URL = window.URL || window.webkitURL;
+            var result = URL.createObjectURL(file);
+            pic.src = result;
         });
     </script>
 </body>

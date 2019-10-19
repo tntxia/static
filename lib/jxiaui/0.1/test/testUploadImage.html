@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Tabs Vue组件</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../../../font-awesome/css/font-awesome.css'></link>
+    <link rel='stylesheet' type='text/css' href='../css/jxiaui-upload-image.css'></link>
+    <script src="../../../vue/vue.js"></script>
+    <script src="../dist/jxiaui.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <jxiaui-upload-image></jxiaui-upload-image>
+        </div>
+    </div>
+    <script>
+        let ui = new Vue({
+            el: "#container",
+            data() {
+                return {
+                    isIpBind: 'Y',
+                    ip: null
+                }
+            },
+            methods: {
+                showIP(row) {
+                    console.log("the ip is ", this.ip);
+                }
+            },
+            computed: {
+                isIpInputDisable() {
+                    return this.isIpBind !== "Y";
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>

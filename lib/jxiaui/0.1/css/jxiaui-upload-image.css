@@ -1,0 +1,12 @@
+.jxiaui-upload-image {
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.jxiaui-upload-image img {
+    cursor: pointer;
+}
+
+.jxiaui-upload-image input[type=file] {
+    display: none;
+}

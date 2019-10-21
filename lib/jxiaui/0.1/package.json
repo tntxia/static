@@ -71,5 +71,8 @@
         "name": "jxiaui-upload-image",
         "template": "src/upload-image.html",
         "options": "src/upload-image.js"
+    }, {
+        "name": "jxiaui-tree",
+        "options": "src/tree.js"
     }]
 }

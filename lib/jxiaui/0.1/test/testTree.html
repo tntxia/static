@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Tabs Vue组件</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../../../font-awesome/css/font-awesome.css'></link>
+    <link rel='stylesheet' type='text/css' href='../css/jxiaui-tree.css'></link>
+    <script src="../../../vue/vue.js"></script>
+    <script src="../dist/jxiaui.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <jxiaui-tree :data="data">
+                <template v-slot="treeNode">
+                    <div style="cursor: pointer;">
+                        <span class="fa fa-caret-right"></span> <span>{{treeNode.name}}</span>
+                    </div>
+                </template>
+            </jxiaui-tree>
+        </div>
+    </div>
+    <script>
+        let ui = new Vue({
+            el: "#container",
+            data() {
+                return {
+                    data: [{
+                        id: 1,
+                        name: 'hello'
+                    }, {
+                        id: 2,
+                        pid: 1,
+                        name: 'hello2'
+                    }, {
+                        id: 3,
+                        pid: 2,
+                        name: 'hello3'
+                    }, {
+                        id: 4,
+                        pid: 2,
+                        name: 'hello4'
+                    }]
+                }
+            },
+            methods: {},
+            computed: {
+                isIpInputDisable() {
+                    return this.isIpBind !== "Y";
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>

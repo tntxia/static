@@ -21,7 +21,7 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
-.main-layout .leftbar {
+.main-layout>.leftbar {
     position: fixed;
     left: 0;
     top: 80px;
@@ -31,7 +31,7 @@ body {
     box-sizing: border-box;
 }
 
-.main-layout .leftbar .leftbar-list {
+.main-layout>.leftbar .leftbar-list {
     padding: 0px;
     margin: 0px;
 }
@@ -55,11 +55,18 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
-.main-layout .main_sec {
+.main-layout>.layout-main {
     position: fixed;
     left: 110px;
     top: 80px;
     bottom: 0;
     overflow: auto;
     background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-layout>.layout-main>.main_sec {
+    flex-grow: 1;
+    height: 100%;
 }

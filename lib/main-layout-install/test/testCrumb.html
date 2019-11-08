@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script>
+        let tree = [{
+            "name": "welcome",
+            "label": "欢迎"
+        }, {
+            "name": "user",
+            "label": "用户管理",
+            "children": [{
+                "name": "add",
+                "label": "增加",
+                "children": [{
+                    "name": "chooseDept",
+                    "label": "选择部门"
+                }]
+            }]
+        }]
+
+        let pathArr = "user/add/chooseDept".split("/");
+
+        console.log(getRoutePath(tree, pathArr));
+
+        function getRoutePath(tree, pathArr) {
+            let res = [];
+            if (!pathArr || !pathArr.length || !tree || !tree.length) {
+                return res;
+            }
+            let p = pathArr.splice(0, 1);
+            let node;
+            tree.forEach(n => {
+                if (n.name == p) {
+                    node = n;
+                }
+            });
+            res.push(node);
+
+            let children = node.children;
+            if (pathArr.length && children) {
+                let childrenRoutePath = getRoutePath(children, pathArr);
+                childrenRoutePath.forEach(c => {
+                    res.push(c);
+                })
+            }
+            return res;
+        }
+    </script>
+</head>
+
+</html>

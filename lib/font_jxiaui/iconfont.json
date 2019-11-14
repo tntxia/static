@@ -1,0 +1,16 @@
+{
+  "id": "1506231",
+  "name": "Web编辑器",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10561721",
+      "name": "Palette",
+      "font_class": "Palette",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    }
+  ]
+}

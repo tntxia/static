@@ -1,0 +1,49 @@
+<div class="jxiaui-rich-editor" :style="getStyle()">
+    <div class="toolbar">
+        <div class="show-palette-btn">
+            <jxiaui-button @click="togglePalette">
+                <span class="iconfont icon-Palette"></span>
+                <span style="width: 30px;display: inline-block;" :style="{background: color}">&nbsp;&nbsp;</span>
+            </jxiaui-button>
+            <div class="dropdown" v-if="palette.showFlag">
+                <div><button @click="hidePalette">确定</button></div>
+                <div style="display: flex;">
+                    <div class="common-color-show">
+                        <table>
+                            <tr v-for="row in palette.grid">
+                                <td v-for="c in row" @click="chooseColor(c)" :style="{background: 'rgb(' + c + ')'} ">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="color-adapt">
+                        <table>
+                            <tr>
+                                <td>红色：</td>
+                                <td><input v-model="palette.red" type="number"></td>
+                            </tr>
+                            <tr>
+                                <td>绿色：</td>
+                                <td><input v-model="palette.green" type="number"></td>
+                            </tr>
+                            <tr>
+                                <td>蓝色：</td>
+                                <td><input v-model="palette.blue" type="number"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <jxiaui-button icon="picture" @click="insertPic">
+            <input type="file" ref="picFile" @change="uploadPic" style="display: none;">
+        </jxiaui-button>
+    </div>
+    <div class="edit-pane">
+        <iframe ref="iframe" style="width: 100%;height: 100%;"></iframe>
+    </div>
+    <div v-if="img">
+        图片属性：<br> 宽：
+        <input v-model="img.width"> 高：
+        <input v-model="img.height">
+    </div>
+</div>

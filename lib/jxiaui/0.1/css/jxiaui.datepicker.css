@@ -9,6 +9,7 @@
     border: 1px solid #ccc;
     padding: 5px;
     background: white;
+    z-index: 1000;
 }
 
 .datepicker-calendar th {

@@ -1,0 +1,43 @@
+.jxiaui-rich-editor {
+    display: flex;
+    flex-direction: column;
+}
+
+.jxiaui-rich-editor>.edit-pane {
+    flex-grow: 1;
+}
+
+.jxiaui-rich-editor>.toolbar>.show-palette-btn {
+    position: relative;
+    display: inline-block;
+}
+
+.jxiaui-rich-editor>.toolbar>.show-palette-btn>.dropdown {
+    position: absolute;
+    top: 30px;
+    padding: 10px;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.jxiaui-rich-editor>.toolbar>.show-palette-btn>.dropdown>.common-color-show {
+    padding: 10;
+}
+
+.jxiaui-rich-editor .dropdown .common-color-show td {
+    cursor: pointer;
+}
+
+.jxiaui-rich-editor>.toolbar>.show-palette-btn>.dropdown .color-adapt {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.jxiaui-rich-editor>.toolbar>.show-palette-btn>.dropdown .color-adapt div {
+    word-break: keep-all;
+}
+
+.jxiaui-rich-editor .dropdown .color-adapt td {
+    word-break: keep-all;
+}

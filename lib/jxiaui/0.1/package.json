@@ -74,5 +74,13 @@
     }, {
         "name": "jxiaui-tree",
         "options": "src/tree.js"
+    }, {
+        "name": "jxiaui-rich-editor",
+        "template": "src/rich-editor.html",
+        "options": "src/rich-editor.js"
+    }, {
+        "name": "jxiaui-html-view",
+        "template": "src/html-view.html",
+        "options": "src/html-view.js"
     }]
 }

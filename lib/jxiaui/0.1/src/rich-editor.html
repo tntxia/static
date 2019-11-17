@@ -1,7 +1,7 @@
 <div class="jxiaui-rich-editor" :style="getStyle()">
     <div class="toolbar">
         <div class="show-palette-btn">
-            <jxiaui-button @click="togglePalette">
+            <jxiaui-button @click="togglePalette" title="选择字体颜色">
                 <span class="iconfont icon-Palette"></span>
                 <span style="width: 30px;display: inline-block;" :style="{background: color}">&nbsp;&nbsp;</span>
             </jxiaui-button>
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <jxiaui-button icon="picture" @click="insertPic">
+        <jxiaui-button icon="image" @click="insertPic" title="插入图片">
             <input type="file" ref="picFile" @change="uploadPic" style="display: none;">
         </jxiaui-button>
     </div>

@@ -1,0 +1,13 @@
+<div class="jxiaui-left-right-pane">
+    <div class="layout">
+        <div class="left" :style="getLeftStyle()">
+            <slot name="left"></slot>
+        </div>
+        <div class="width-adapter" @mousedown.stop="startResize"></div>
+        <div class="right">
+            <div class="mask" v-if="startPos"></div>
+            <slot name="right"></slot>
+        </div>
+    </div>
+
+</div>

@@ -82,5 +82,9 @@
         "name": "jxiaui-html-view",
         "template": "src/html-view.html",
         "options": "src/html-view.js"
+    }, {
+        "name": "jxiaui-left-right-pane",
+        "template": "src/left-right-pane.html",
+        "options": "src/left-right-pane.js"
     }]
 }

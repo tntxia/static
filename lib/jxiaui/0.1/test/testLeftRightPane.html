@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>左右两边的视窗</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../css/jxiaui-left-right-pane.css'></link>
+    <script src="../../../vue/vue.js"></script>
+    <script src="../dist/jxiaui.js"></script>
+</head>
+
+<body>
+    <div id="container" style="height: 300px;">
+        <jxiaui-left-right-pane :left-width="200">
+            <div slot="right">right</div>
+        </jxiaui-left-right-pane>
+    </div>
+    <script>
+        let ui = new Vue({
+            el: "#container",
+            data() {
+                return {
+
+                }
+            },
+            methods: {},
+            computed: {
+
+            },
+        });
+    </script>
+</body>
+
+</html>
